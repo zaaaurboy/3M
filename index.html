@@ -10,6 +10,16 @@
       scroll-behavior: smooth;
     }
 
+    body {
+      background-color: #3b2415;
+      color: #fffaf3;
+      font-family: 'Sans-serif';
+    }
+
+    a:hover {
+      transition: 0.3s ease;
+    }
+
     .rotate {
       animation: spin 5s linear infinite;
     }
@@ -32,16 +42,33 @@
       border-radius: 50%;
     }
 
+    .btn-gold {
+      background-color: #e0c097;
+      color: #3b2415;
+    }
+
+    .btn-gold:hover {
+      background-color: #f5e1c0;
+    }
+
+    .section-bg {
+      background-color: #5c3b28;
+    }
+
+    .section-bg-light {
+      background-color: #4b2e1e;
+    }
+
     img {
       padding: 0;
       margin: 0;
     }
   </style>
 </head>
-<body class="bg-[#4b2e1e] text-white font-sans">
+<body class="font-sans">
 
   <!-- Navbar -->
-  <header class="bg-[#3b2415] shadow-md fixed top-0 w-full z-50">
+  <header class="bg-[#2c1a10] shadow-md fixed top-0 w-full z-50">
     <div class="container mx-auto flex items-center justify-between px-6 py-4">
       <div class="flex items-center">
         <img src="logo-nna.png" alt="Logo" class="w-8 h-8 mr-2" />
@@ -49,26 +76,22 @@
       </div>
       <div class="flex items-center space-x-6">
         <nav class="hidden md:flex space-x-6">
-          <a href="#about" class="hover:text-yellow-400">Tentang</a>
-          <a href="#produk" class="hover:text-yellow-400">Produk</a>
-          <a href="#kontak" class="hover:text-yellow-400">Kontak</a>
+          <a href="#about" class="hover:text-[#e0c097]">Tentang</a>
+          <a href="#produk" class="hover:text-[#e0c097]">Produk</a>
+          <a href="#kontak" class="hover:text-[#e0c097]">Kontak</a>
         </nav>
-        <a href="#kontak" class="bg-yellow-400 text-[#3b2415] px-4 py-2 rounded font-semibold hover:bg-yellow-300">
-          Pesan Sekarang
-        </a>
+        <a href="#kontak" class="btn-gold px-4 py-2 rounded font-semibold">Pesan Sekarang</a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="pt-24 pb-20 bg-[#4b2e1e]">
+  <section class="pt-24 pb-20 section-bg-light">
     <div class="container mx-auto flex flex-col md:flex-row items-center px-6">
       <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
         <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Nikmati Saus Wijen Khas Kami</h2>
-        <p class="mb-6 text-lg text-gray-200">Original • Spicy • Blackpepper — cocok untuk ayam goreng, salad, dan makanan kekinian.</p>
-        <a href="#produk" class="bg-yellow-400 text-[#3b2415] px-6 py-3 rounded font-semibold hover:bg-yellow-300">
-          Lihat Produk
-        </a>
+        <p class="mb-6 text-lg text-[#f5e1c0]">Original • Spicy • Blackpepper — cocok untuk ayam goreng, salad, dan makanan kekinian.</p>
+        <a href="#produk" class="btn-gold px-6 py-3 rounded font-semibold">Lihat Produk</a>
       </div>
       <div class="md:w-1/2">
         <img src="mmm.png" alt="Produk Saus" class="w-full max-w-md mx-auto rotate no-border rounded-circle bg-transparent" />
@@ -77,53 +100,52 @@
   </section>
 
   <!-- Tentang Kami -->
-  <section id="about" class="py-20 bg-[#5c3b28]">
+  <section id="about" class="py-20 section-bg">
     <div class="container mx-auto max-w-4xl px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6 text-yellow-400">Tentang Kami</h2>
-      <p class="text-lg leading-relaxed text-gray-100">
+      <h2 class="text-3xl font-bold mb-6 text-[#e0c097]">Tentang Kami</h2>
+      <p class="text-lg leading-relaxed text-[#f5e1c0]">
         NNA Kitchen lahir dari dapur kecil di Kota Batu pada tahun 2022, di tengah situasi sulit saat pandemi memaksa banyak usaha untuk berhenti. Dari keterbatasan itulah tumbuh tekad untuk bangkit. Berawal dari saus wijen rumahan yang dulu hanya menjadi pelengkap menu katsu, kini berkembang menjadi produk andalan dengan tiga varian rasa khas: Original yang gurih lembut, Spicy yang pedas pas, dan Blackpepper yang kaya aroma. Dukungan dari orang-orang terdekat dan keyakinan pada cita rasa sendiri menjadi bahan bakar utama kami untuk terus bertumbuh. Kini, NNA Kitchen dipercaya menjadi supplier oleh berbagai kafe dan pelaku kuliner karena menghadirkan rasa yang otentik, konsisten, dan dibuat dengan sepenuh hati. Bagi kami, setiap botol bukan sekadar saus—melainkan wujud dari perjuangan, semangat, dan kehangatan yang ingin kami bagikan kepada setiap meja makan.
-        <br><br>
       </p>
     </div>
   </section>
 
   <!-- Produk Kami -->
-  <section id="produk" class="py-20 bg-[#4b2e1e]">
+  <section id="produk" class="py-20 section-bg-light">
     <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-12 text-yellow-400">Varian Produk</h2>
+      <h2 class="text-3xl font-bold mb-12 text-[#e0c097]">Varian Produk</h2>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 max-w-5xl mx-auto">
         <div>
           <img src="mmm.png" class="rounded-full w-44 h-44 mx-auto object-contain mb-4 transform scale-150 hover:scale-125 transition duration-300 ease-in-out" alt="Original">
           <h3 class="text-xl font-semibold mb-1">Saus Wijen Original</h3>
-          <p class="text-sm text-gray-200">Rasa klasik gurih, cocok untuk semua hidangan</p>
+          <p class="text-sm text-[#f5e1c0]">Rasa klasik gurih, cocok untuk semua hidangan</p>
         </div>
         <div>
           <img src="mm.png" class="rounded-full w-44 h-44 mx-auto object-contain mb-4 transform scale-120 hover:scale-90 transition duration-300 ease-in-out" alt="Spicy">
           <h3 class="text-xl font-semibold mb-1">Saus Wijen Spicy</h3>
-          <p class="text-sm text-gray-200">Pedas mantap yang bikin ketagihan</p>
+          <p class="text-sm text-[#f5e1c0]">Pedas mantap yang bikin ketagihan</p>
         </div>
         <div>
-          <img src="img/blackpepper-nobg.png" class="rounded-full w-44 h-44 mx-auto object-contain mb-4" alt="Blackpepper">
+          <img src="mmmm.png" class="rounded-full w-44 h-44 mx-auto object-contain mb-4 transform scale-150 hover:scale-125 transition duration-300 ease-in-out" alt="Blackpepper">
           <h3 class="text-xl font-semibold mb-1">Saus Wijen Blackpepper</h3>
-          <p class="text-sm text-gray-200">Rasa lada hitam yang khas dan mendalam</p>
+          <p class="text-sm text-[#f5e1c0]">Rasa lada hitam yang khas dan mendalam</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Kontak -->
-  <section id="kontak" class="py-20 bg-[#5c3b28]">
+  <section id="kontak" class="py-20 section-bg">
     <div class="container mx-auto px-6 text-center max-w-xl">
-      <h2 class="text-3xl font-bold mb-6 text-yellow-400">Hubungi Kami</h2>
+      <h2 class="text-3xl font-bold mb-6 text-[#e0c097]">Hubungi Kami</h2>
       <p class="mb-3">📍 Kota Batu, Jawa Timur</p>
-      <p class="mb-3">📞 WhatsApp: <a href="https://wa.me/6281234567890" class="underline font-semibold text-yellow-400">0812-3456-7890</a></p>
-      <p class="mb-6">✉️ Email: <a href="mailto:nnakitchen@example.com" class="underline text-yellow-400">nnakitchen@example.com</a></p>
+      <p class="mb-3">📞 WhatsApp: <a href="https://wa.me/6281234567890" class="underline font-semibold text-[#e0c097]">0812-3456-7890</a></p>
+      <p class="mb-6">✉️ Email: <a href="mailto:nnakitchen@example.com" class="underline text-[#e0c097]">nnakitchen@example.com</a></p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[#3b2415] text-white text-center py-6 border-t border-[#6b4a31]">
-    <p>&copy; 2025 NNA Kitchen </p>
+  <footer class="bg-[#2c1a10] text-white text-center py-6 border-t border-[#6b4a31]">
+    <p>&copy; 2025 NNA Kitchen</p>
     <div class="mt-2">
       <a href="#" class="mx-2 hover:underline">Instagram</a>
       <a href="#" class="mx-2 hover:underline">Shopee</a>
